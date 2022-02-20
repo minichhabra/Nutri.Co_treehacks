@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+
+<!-- header starts  -->
+<header class="header">
+  <a href="#" class="logo"> <i class="fas fa-water"></i> Nutri.co </a>
+
+  <nav class="navbar">
+    <nav class="navbar">
+      <a href="index.html"><a href="{{url_for('static',filename='index.html')}}">Home</a>
+      <a href="nutrichart.html"><a href="{{url_for('static',filename='nutrichart.html')}}">Nutrition Chart</a>
+      <a href="video.html"><a href="{{url_for('static',filename='video.html')}}">Food</a>
+      <a href="bmibmr.html"><a href="{{url_for('static',filename='bmibmr.html')}}">Calculator</a>
+      <a href="dosha-quiz.html"><a href="{{url_for('static',filename='dosha-quiz.html')}}">Doshas</a>
+    </nav>
+  </nav>
+
+  <div class="icons">
+    <div id="login-btn" class="fas fa-user"></div>
+  </div>
+
+ 
+</header>
+<!-- header ends -->
+
+<!-- bottom navbar  -->
+<nav class="bottom-navbar">
+  <a href="#home" class="fas fa-home"></a>
+  <a href="#about" class="fas fa-list"></a>
+  <a href="#recipes" class="fas fa-tags"></a>
+  <a href="#articles" class="fas fa-blog"></a>
+</nav>
+<centre>
+<br><br><br><br><br><br><br><br><br>
+<section class="contact" id="contact">
+  <h1 class="heading"> <span>BMI/BMR Calculator</span> </h1>
+  <br>
+  <center><h2 id="answer"></h2>
+    <br><br>
+    <h2 id="answer1"></h2>
+    <br><br>
+  <h2 id="answer2"></h2>
+  <br><br>
+    Weight (in kgs)  :<input type="text" id="w"  placeholder="Weight"><br><br>
+    Enter Height (in m): <input type="text" id="h"  placeholder="Height"><br><br>
+    Enter age(in years):<input type="text" id="a"  placeholder="Age"><br><br>
+  
+    <input type="button" class="btn" value="Submit" onclick="sumValues()"></center> 
+  
+  <script>
+  function sumValues()
+  {
+  var h1,w1,bmi,bmr1,a1,bmr2;
+  w1=document.getElementById("w").value;
+  h1=document.getElementById("h").value;
+  a1=document.getElementById("a").value;
+  bmr1=88.362+(13.397*w1)+(4.799*h1)-(5.677*a1);
+  bmr2=447.593+(9.247*w1)+(3.099*h1)-(4.330*a1);
+  bmi=parseFloat(w1)/(parseFloat(h1)*parseFloat(h1));
+  if(!isNaN(bmi))
+  {
+           document.getElementById("answer").innerHTML="BMI: "+bmi;
+           document.getElementById("answer1").innerHTML="Men BMR: "+bmr1;
+           document.getElementById("answer2").innerHTML="Women BMR: "+bmr2;}
+  
+  }
+  </script>
+  <br><br>
+  <style>
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  </style>
+  <table position="left">
+  <tr>
+    <th>BMI value</th>
+    <th>Health status</th>
+    <th>Exercise Level</th>
+    <th>Daily Calories Required(Kcal/day)</th>
+   
+  </tr>
+  <tr>
+    <td>&#60; 16</td>
+    <td>Severly Underweight</td>
+    <td>Little to no exercise</td>
+      <td>BMR * 1.2</td>
+    
+  </tr>
+  <tr>
+    <td>16 &#8804 bmi and bmi &#60; 18.5</td>
+    <td>Underweight</td>
+    <td>Light Exercise(1-3 days per week)</td>
+      <td>BMR * 1.375</td>
+    
+  </tr>
+  <tr>
+    <td>18.5 &#8804 bmi and bmi &#60; 25</td>
+    <td>Healthy</td>
+    <td>Moderate Exercise(3-5 days per week)</td>
+    <td>BMR * 1.55</td>
+   
+  </tr>
+  <tr>
+    <td>25 &#8804 bmi and bmi &#60; 30</td>
+    <td>Overweight</td>
+    <td>Heavy Exercise (6-7 days per week)</td>
+      <td>BMR * 1.725</td>
+    
+  </tr>
+<tr>
+    <td>30 &#8804 bmi</td>
+    <td>Severly Overweight</td>
+    <td>Ver heavy exercise(twice per day,extra heavy workouts)</td>
+    <td>BMR * 1.9</td>
+    
+  </tr>
+  
+  
+</table>
+ 
+    </centre>
+    <!--contact start-->
+    <section class="contact" id="contact">
+      <h1 class="heading"> <span>Contact</span> </h1>
+      <div class="row">
+          <div class="image">
+              <img src="https://unsplash.com/photos/4_jhDO54BYg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8aGVhbHRoeSUyMGZvb2R8fDB8fHx8MTYzOTIyMDk1NQ&force=true" alt="">
+          </div>
+          <form action="">
+              <div class="inputBox">
+                  <input type="text" placeholder="name">
+                  <input type="email" placeholder="email">
+              </div>
+              <div class="inputBox">
+                  <input type="number" placeholder="number">
+                  <input type="text" placeholder="subject">
+              </div>
+              <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+              <input type="submit" class="btn" value="send message">
+          </form>
+      </div>
+      <div class="just-line"></div>
+    </section>
+    <!--contact end-->
+    
+    
+    </body>
+    
+    </html>
