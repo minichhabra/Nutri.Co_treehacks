@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+
+<!-- header starts  -->
+<header class="header">
+  <a href="#" class="logo"> <i class="fas fa-water"></i> Nutri.co </a>
+
+  <nav class="navbar">
+    <nav class="navbar">
+      <a href="index.html"><a href="{{url_for('static',filename='index.html')}}">Home</a>
+      <a href="nutrichart.html"><a href="{{url_for('static',filename='nutrichart.html')}}">Nutrition Chart</a>
+      <a href="video.html"><a href="{{url_for('static',filename='video.html')}}">Food</a>
+      <a href="bmibmr.html"><a href="{{url_for('static',filename='bmibmr.html')}}">Calculator</a>
+      <a href="dosha-quiz.html"><a href="{{url_for('static',filename='dosha-quiz.html')}}">Doshas</a>
+    </nav>
+  </nav>
+
+  <div class="icons">
+    <div id="login-btn" class="fas fa-user"></div>
+  </div>
+
+ 
+</header>
+<!-- header ends -->
+
+<!-- bottom navbar  -->
+<nav class="bottom-navbar">
+  <a href="#home" class="fas fa-home"></a>
+  <a href="#about" class="fas fa-list"></a>
+  <a href="#recipes" class="fas fa-tags"></a>
+  <a href="#articles" class="fas fa-blog"></a>
+
+</nav>
+
+
+<!-- home starts  -->
+<section class="home" id="home">
+  <div class="row">
+    <div class="content">
+      <h3>HEALTHIER YOU!<br></h3>
+      <!-- <h3>Fitness starts with what you eat</h3> -->
+      <p>
+        We believe fitness should be accessible to everyone, everywhere, regardless of income
+        or access to a gym. With hundreds of professional workouts, healthy recipes and informative
+        articles, as well as one of the most positive caloric advisor
+        on the web, you’ll have everything you need to reach your personal fitness goals!
+      </p>
+      <a href="#about" class="btn">Get Started</a>
+    </div>
+
+    <div class="books-slider">
+      <a target="_blank" href="about-image.jpg">
+        <img src="{{url_for('static',filename='about-image.jpg')}}" alt=" " width="100%" height="50%" frameborder="0" style="border:0;"
+            allowfullscreen="" aria-hidden="false" tabindex="0"></a>
+      <img src="about-image.jpg" class="stand" alt="">
+    </div>
+  </div>
+</section>
+<!-- home ends  -->
+
+<!-- about starts  -->
+<section class="icons-container" id="about">
+  <h1 class="heading">
+    <span>Services & Products</span>
+  </h1>
+  <div class="row">
+    <div class="icons">
+    <i class="fas fa-book"></i>
+    <div class="content">
+      <h3>Learn. Track. Improve.</h3>
+      <p>
+        Keeping a food diary
+        helps you understand your habits and increases your likelihood of hitting your goals.
+      </p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <i class="fas fa-mobile"></i>
+
+    <div class="content">
+      <h3>Nutrition Tracker</h3>
+      <p>
+        Take control of your goals.
+        Track calories, break down ingredients.
+      </p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <i class="fas fa-running"></i>
+    <div class="content">
+      <h3>Stay Motivated</h3>
+      <p>
+        By following training and nutrition
+        goals to suit your needs, you can access the lifestyle that you deserve.
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- about ends -->
+
+<!-- recipe starts  -->
+<section class="gallery" id="recipes">
+  <h1 class="heading">
+    <span>Recipes & Inspiration</span>
+  </h1>
+  <div class="box-container">
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/7/26/1/CN1B01_oven-baked-salmon_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382545141944.jpeg" alt="">
+          <div class="content">
+              <h3>Oven-Baked Salmon</h3>
+              <p>
+                Keep this recipe in your back pocket for nights it seems you don't have time to cook dinner. 
+                It takes just 20 minutes from start to finish.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2010/8/12/0/FN-Thanksgiving-2010_Brussels-Sprouts_s4x3.jpg.rend.hgtvcom.966.725.suffix/1384540892898.jpeg" alt="">
+          <div class="content">
+              <h3>Ina's Roasted Brussels Sprouts</h3>
+              <p>
+                Ina's tender, crispy sprouts are simply roasted with olive oil, salt and pepper for a 
+                classic side that you just can't beat. One reviewer said it even won the kids over!
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/8/10/0/Thanksgiving-2011_NY0106-green-beans-lemon-garlic_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382540632130.jpeg" alt="">
+          <div class="content">
+              <h3>Green Beans with Lemon and Garlic</h3>
+              <p>
+                Keep this recipe for garlicky, citrusy green beans in your back pocket. They go 
+                with almost anything, take 
+                just 17 minutes to make from start to finish, and clock in at only 122 calories per serving.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/8/23/0/WU0512H_shrimp-stir-fry-recipe_s4x3.jpg.rend.hgtvcom.966.725.suffix/1425576155365.jpeg" alt="">
+          <div class="content">
+              <h3>Ree's Shrimp Stir-Fry</h3>
+              <p>
+                Packed with color, flavor and lean protein, Ree's Shrimp Stir Fry is a fan favorite.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/2/14/0/FNK_Herbed-Chicken-Marsala_s4x3.jpg.rend.hgtvcom.966.725.suffix/1371614296995.jpeg" alt="">
+          <div class="content">
+              <h3>Herbed Chicken Marsala</h3>
+              <p>
+                Smothered in low-calorie sauteed mushrooms and sundried tomatoes, this dish is both 
+                healthy and satisfying. 
+                A little bit of butter goes a long way in the sauce — just a touch adds creamy richness.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/4/26/0/FNK_LEMONY-YOGURT-POUND-CAKE_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382542461780.jpeg" alt="">
+          <div class="content">
+              <h3>Lemony Yogurt Pound Cake</h3>
+              <p>
+                Heart-healthy olive oil and protein-rich Greek yogurt take the place of butter in 
+                this lemony pound cake. 
+                Egg whites also help reduce calories, fat and cholesterol.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/11/25/0/FNK_pan-seared-salmon-with-kale-apple-salad_s4x3.jpg.rend.hgtvcom.966.725.suffix/1387918756116.jpeg" alt="">
+          <div class="content">
+              <h3>Pan-Seared Salmon with Kale and Apple Salad</h3>
+              <p>
+                The star of this dish is the kale salad. It's crunchy, tangy and sweet!
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/12/0/fnk_mixed-berries-and-banana-smoothie_s4x3.jpg.rend.hgtvcom.966.725.suffix/1386935601342.jpeg" alt="">
+          <div class="content">
+              <h3>Mixed Berries and Banana Smoothie</h3>
+              <p>
+                If you've got just 5 minutes, you've got time to 
+                blend up this nutrient-packed, 5-ingredient breakfast or snack.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/20/0/FNK_Healthy-Breakfast-Casserole_s4x3.jpg.rend.hgtvcom.966.725.suffix/1389218443313.jpeg" alt="">
+          <div class="content">
+              <h3>Breakfast Casserole</h3>
+              <p>
+                Healthy cooking doesn't always mean using low-fat products. The full-fat Cheddar and Parmesan 
+                together are so satisfying in this easy-to-make casserole that a little goes a long way.
+              </p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- recipe ends -->
+
+
+
+
+
+
+
+
+<!--contact start-->
+<section class="contact" id="contact">
+  <h1 class="heading"> <span>Contact</span> </h1>
+  <div class="row">
+      <div class="image">
+          <img src="https://unsplash.com/photos/4_jhDO54BYg/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8aGVhbHRoeSUyMGZvb2R8fDB8fHx8MTYzOTIyMDk1NQ&force=true" alt="">
+      </div>
+      <form action="">
+          <div class="inputBox">
+              <input type="text" placeholder="name">
+              <input type="email" placeholder="email">
+          </div>
+          <div class="inputBox">
+              <input type="number" placeholder="number">
+              <input type="text" placeholder="subject">
+          </div>
+          <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" class="btn" value="send message">
+      </form>
+  </div>
+  <div class="just-line"></div>
+</section>
+<!--contact end-->
+
+
+</body>
+
+</html>
