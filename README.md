@@ -13,7 +13,6 @@ We have a tool to determine **calorie intake** based on live feed/picture upload
 The entire application is built using:
 - Frontend: HTML, JS, CSS
 - Backend: Python, Flask, OpenCV
-
 - Whatsapp bot is built using Twillio and Yummly API
 - Live feed is taken using yolov3 for food detection and pytesseract for text analysis
 
